@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C7680B5268C45552A43FC2B /* Pods_DGEmptyState.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D5B511FEAB1619A451AA2B /* Pods_DGEmptyState.framework */; };
 		72F4E38D1F25108C00AE5E3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F4E38C1F25108C00AE5E3F /* AppDelegate.swift */; };
 		72F4E38F1F25108C00AE5E3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F4E38E1F25108C00AE5E3F /* ViewController.swift */; };
 		72F4E3921F25108C00AE5E3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F4E3901F25108C00AE5E3F /* Main.storyboard */; };
 		72F4E3951F25108C00AE5E3F /* DGEmptyState.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 72F4E3931F25108C00AE5E3F /* DGEmptyState.xcdatamodeld */; };
 		72F4E3971F25108C00AE5E3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72F4E3961F25108C00AE5E3F /* Assets.xcassets */; };
 		72F4E39A1F25108C00AE5E3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F4E3981F25108C00AE5E3F /* LaunchScreen.storyboard */; };
+		72F4E3A21F25153500AE5E3F /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F4E3A11F25153500AE5E3F /* EmptyStateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20D5B511FEAB1619A451AA2B /* Pods_DGEmptyState.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DGEmptyState.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F4E3891F25108C00AE5E3F /* DGEmptyState.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DGEmptyState.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F4E38C1F25108C00AE5E3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72F4E38E1F25108C00AE5E3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		72F4E3961F25108C00AE5E3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72F4E3991F25108C00AE5E3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72F4E39B1F25108C00AE5E3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72F4E3A11F25153500AE5E3F /* EmptyStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		AD225584739E8E83EBC50AD1 /* Pods-DGEmptyState.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGEmptyState.release.xcconfig"; path = "Pods/Target Support Files/Pods-DGEmptyState/Pods-DGEmptyState.release.xcconfig"; sourceTree = "<group>"; };
+		B665CA2FEC08225FF49CB7EB /* Pods-DGEmptyState.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGEmptyState.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DGEmptyState/Pods-DGEmptyState.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C7680B5268C45552A43FC2B /* Pods_DGEmptyState.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2227D4F3696D8BAFB10C175A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20D5B511FEAB1619A451AA2B /* Pods_DGEmptyState.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		436106B2F6CE4356EC4EB313 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B665CA2FEC08225FF49CB7EB /* Pods-DGEmptyState.debug.xcconfig */,
+				AD225584739E8E83EBC50AD1 /* Pods-DGEmptyState.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		72F4E3801F25108C00AE5E3F = {
 			isa = PBXGroup;
 			children = (
 				72F4E38B1F25108C00AE5E3F /* DGEmptyState */,
 				72F4E38A1F25108C00AE5E3F /* Products */,
+				436106B2F6CE4356EC4EB313 /* Pods */,
+				2227D4F3696D8BAFB10C175A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				72F4E3981F25108C00AE5E3F /* LaunchScreen.storyboard */,
 				72F4E39B1F25108C00AE5E3F /* Info.plist */,
 				72F4E3931F25108C00AE5E3F /* DGEmptyState.xcdatamodeld */,
+				72F4E3A11F25153500AE5E3F /* EmptyStateView.swift */,
 			);
 			path = DGEmptyState;
 			sourceTree = "<group>";
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72F4E39E1F25108C00AE5E3F /* Build configuration list for PBXNativeTarget "DGEmptyState" */;
 			buildPhases = (
+				5449D9E1D07A1EB7BBCA9565 /* [CP] Check Pods Manifest.lock */,
 				72F4E3851F25108C00AE5E3F /* Sources */,
 				72F4E3861F25108C00AE5E3F /* Frameworks */,
 				72F4E3871F25108C00AE5E3F /* Resources */,
+				8139662B4879DFEDC133B5CD /* [CP] Embed Pods Frameworks */,
+				3D0ED575EFB2D0591AE3B355 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +165,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3D0ED575EFB2D0591AE3B355 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DGEmptyState/Pods-DGEmptyState-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5449D9E1D07A1EB7BBCA9565 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8139662B4879DFEDC133B5CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DGEmptyState/Pods-DGEmptyState-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		72F4E3851F25108C00AE5E3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -142,6 +220,7 @@
 			files = (
 				72F4E3951F25108C00AE5E3F /* DGEmptyState.xcdatamodeld in Sources */,
 				72F4E38F1F25108C00AE5E3F /* ViewController.swift in Sources */,
+				72F4E3A21F25153500AE5E3F /* EmptyStateView.swift in Sources */,
 				72F4E38D1F25108C00AE5E3F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +344,7 @@
 		};
 		72F4E39F1F25108C00AE5E3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B665CA2FEC08225FF49CB7EB /* Pods-DGEmptyState.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KT3EESWU53;
@@ -278,6 +358,7 @@
 		};
 		72F4E3A01F25108C00AE5E3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD225584739E8E83EBC50AD1 /* Pods-DGEmptyState.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KT3EESWU53;
@@ -308,6 +389,7 @@
 				72F4E3A01F25108C00AE5E3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
