@@ -10,7 +10,7 @@ import UIKit
 import PureLayout
 
 class ViewController: UIViewController {
-    
+    //test for commit
     fileprivate var tableView: UITableView!
     
     fileprivate let image = UIImage(named: "productSample")!.withRenderingMode(.alwaysTemplate)
