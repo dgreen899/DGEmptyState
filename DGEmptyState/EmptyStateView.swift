@@ -18,12 +18,12 @@ class EmptyStateView: UIView {
     fileprivate var bottomLabel: UILabel!
     
     fileprivate let topColor = UIColor.darkGray
-    fileprivate let topFont = UIFont.boldSystemFont(ofSize: 22)
+    fileprivate let topFont = UIFont.boldSystemFont(ofSize: 20)
     fileprivate let bottomColor = UIColor.gray
-    fileprivate let bottomFont = UIFont.systemFont(ofSize: 18)
+    fileprivate let bottomFont = UIFont.systemFont(ofSize: 16)
     
     fileprivate let spacing: CGFloat = 10
-    fileprivate let imageViewHeight: CGFloat = 100
+    fileprivate let imageViewHeight: CGFloat = 120
     fileprivate let bottomLabelWidth: CGFloat = 300
     
     var didSetupConstraints = false
